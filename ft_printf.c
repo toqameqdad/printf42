@@ -6,7 +6,7 @@
 /*   By: tmeqdad <tmeqdad@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 13:24:03 by tmeqdad           #+#    #+#             */
-/*   Updated: 2025/12/13 13:42:31 by tmeqdad          ###   ########.fr       */
+/*   Updated: 2025/12/13 13:46:20 by tmeqdad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,10 @@ int	print_format(char specifier, va_list ap)
 		count += print_char(va_arg(ap, int));
 	else if (specifier == 's')
 		count += print_str(va_arg(ap, char *));
-	else if
-
+	else if (specifier == 'd')
+		count += print_digit(va_arg(ap, int, 10));
+	else if (specifier == 'x')
+		count += print_digit(va_arg(ap, unsigned int, 16));
 
 int	my_printf(const char *format, ...)
 {
