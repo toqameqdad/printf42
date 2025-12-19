@@ -6,13 +6,13 @@
 /*   By: tmeqdad <toqa.meqdad@learner.42.tech>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 13:24:03 by tmeqdad           #+#    #+#             */
-/*   Updated: 2025/12/18 16:20:01 by tmeqdad          ###   ########.fr       */
+/*   Updated: 2025/12/19 14:44:10 by tmeqdad          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_format(char specifier, va_list ap)
+static int	print_format(char specifier, va_list ap)
 {
 	int	count;
 

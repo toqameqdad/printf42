@@ -18,7 +18,6 @@
 
 int		ft_printf(const char *format, ...);
 
-int		print_format(char specifier, va_list ap);
 int		print_char(char c);
 int		print_str(char *s);
 int		print_digit(long num, int base, int mode);
